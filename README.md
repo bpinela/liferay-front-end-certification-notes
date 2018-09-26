@@ -1,10 +1,11 @@
 # Liferay front-end certification notes
-    - Personal notes for the Liferay Front-end Certification
+Personal notes for the Liferay Front-end Certification
 
 ## Table of contents
 * [Liferay introduction and first steps](#liferay-introduction-and-first-steps)
 * [UI Techs](#ui-techs)
 
+<br/>
 
 ## Liferay introduction and first steps
 
@@ -18,6 +19,8 @@
 
 #### Developing with style
 - You can work with a lot of tools to help the development and beautify your application
+
+
 
 ### Front end Development tools
 #### Developing in liferay
@@ -42,37 +45,30 @@
 #### Theme builder gradle plugin
 - As an alternative for liferay theme generate it offers gradle plugin for theme development
 
+<br/>
+
 ### Setting up development env
 - Install JDK8 (necessary to run and develop liferay)
-
 - Default paths to install liferay
     - Mac: /Users/[your-user]/liferay
     - Linux: /home/[your-user]/liferay
     - Windows: C:\liferay
-
 - Install node.js
-
 - After install node you can install your project dependencies (npm i -g yo gulp)
-
 - Install liferay theme generator (npm install -g generator-liferay-theme)
-
 - Liferay Tomcat bundle
     - It contains all you need to run liferay;
-
 - Creating bundle structure
     - Windows: C:\liferay\bundles
     - Mac/Linux: [user-home]/liferay/bundles
-
 - Tomcat bundle
     - Windows: C:\liferay\bundles\liferay-dxp-digital-enterprise-[version]\tomcat-[version]\bin
     - Mac/Linux: [user-home]/liferay/bundles/liferay-dxp-digital-enterprise-[version]/tomcat-[version]/bin
     - To start tomcat just :
         - Windows: startup.bat
         - Mac/Linux: ` .catalina.sh `
-
 - Activate liferay
     - After deploy your project you will need to activate it with your activation dev key
-
 - Liferay Home
     - Is the primary location for any custom liferay properties or config files
     - In prod env this is will almost always be configured to specific location for being used for config files
@@ -80,6 +76,8 @@
     - There are 2 ways to override properties:
         > Liferay's control panel or creating a file called portal-ext.properties in LIFERAY_HOME 
         also this file overrides properties from portal.properties
-    - Liferay reads: portal.properties #### portal-ext.properties #### portal-setup-wizard.properties
+    - Liferay reads: portal.properties > portal-ext.properties > portal-setup-wizard.properties
+
+<br/>
 
 ## UI Techs
