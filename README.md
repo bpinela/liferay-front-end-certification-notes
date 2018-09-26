@@ -1,7 +1,14 @@
 # Liferay front-end certification notes
     - Personal notes for the Liferay Front-end Certification
 
-## Introduction to Front end development
+## Table of contents
+    * [Liferay introduction and first steps](#liferay-introduction-and-first-steps)
+    * [UI Techs](#ui-techs)
+
+
+## Liferay introduction and first steps
+
+#### Introduction to Front end development
     - Fully customizable platform
     - Front and back have wide variety of options for functional and stylistic customizations
 
@@ -12,7 +19,7 @@
     > Developing with style
         - You can work with a lot of tools to help the development and beautify your application
 
-## Front end Development tools
+#### Front end Development tools
     > Developing in liferay
         - Is tool-agnostic
         - Customizations and new features are deployed in modules
@@ -35,7 +42,7 @@
     > Theme builder gradle plugin
         - As an alternative for liferay theme generate it offers gradle plugin for theme development
 
-## Setting up development env
+#### Setting up development env
     > Install JDK8 (necessary to run and develop liferay)
 
     > Default paths to install liferay
@@ -74,3 +81,5 @@
             - Liferay's control panel or creating a file called portal-ext.properties in LIFERAY_HOME
             - This file overrides properties from portal.properties
         - Liferay reads: portal.properties > portal-ext.properties > portal-setup-wizard.properties
+
+## UI Techs
