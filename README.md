@@ -43,43 +43,43 @@
 - As an alternative for liferay theme generate it offers gradle plugin for theme development
 
 ### Setting up development env
-#### Install JDK8 (necessary to run and develop liferay)
+- Install JDK8 (necessary to run and develop liferay)
 
-#### Default paths to install liferay
-- Mac: /Users/[your-user]/liferay
-- Linux: /home/[your-user]/liferay
-- Windows: C:\liferay
+- Default paths to install liferay
+    - Mac: /Users/[your-user]/liferay
+    - Linux: /home/[your-user]/liferay
+    - Windows: C:\liferay
 
-#### Install node.js
+- Install node.js
 
-#### After install node you can install your project dependencies (npm i -g yo gulp)
+- After install node you can install your project dependencies (npm i -g yo gulp)
 
-#### Install liferay theme generator (npm install -g generator-liferay-theme)
+- Install liferay theme generator (npm install -g generator-liferay-theme)
 
-#### Liferay Tomcat bundle
-- It contains all you need to run liferay;
+- Liferay Tomcat bundle
+    - It contains all you need to run liferay;
 
-#### Creating bundle structure
-- Windows: C:\liferay\bundles
-- Mac/Linux: [user-home]/liferay/bundles
+- Creating bundle structure
+    - Windows: C:\liferay\bundles
+    - Mac/Linux: [user-home]/liferay/bundles
 
-#### Tomcat bundle
-- Windows: C:\liferay\bundles\liferay-dxp-digital-enterprise-[version]\tomcat-[version]\bin
-- Mac/Linux: [user-home]/liferay/bundles/liferay-dxp-digital-enterprise-[version]/tomcat-[version]/bin
-- To start tomcat just :
-    - Windows: startup.bat
-    - Mac/Linux: ` .catalina.sh `
+- Tomcat bundle
+    - Windows: C:\liferay\bundles\liferay-dxp-digital-enterprise-[version]\tomcat-[version]\bin
+    - Mac/Linux: [user-home]/liferay/bundles/liferay-dxp-digital-enterprise-[version]/tomcat-[version]/bin
+    - To start tomcat just :
+        - Windows: startup.bat
+        - Mac/Linux: ` .catalina.sh `
 
-#### Activate liferay
-- After deploy your project you will need to activate it with your activation dev key
+- Activate liferay
+    - After deploy your project you will need to activate it with your activation dev key
 
-#### Liferay Home
-- Is the primary location for any custom liferay properties or config files
-- In prod env this is will almost always be configured to specific location for being used for config files
-- portal-setup-wizard.properties is created in LIFERAY_HOME to store basic config properties
-- There are 2 ways to override properties:
-    - Liferay's control panel or creating a file called portal-ext.properties in LIFERAY_HOME
-    - This file overrides properties from portal.properties
-- Liferay reads: portal.properties #### portal-ext.properties #### portal-setup-wizard.properties
+- Liferay Home
+    - Is the primary location for any custom liferay properties or config files
+    - In prod env this is will almost always be configured to specific location for being used for config files
+    - portal-setup-wizard.properties is created in LIFERAY_HOME to store basic config properties
+    - There are 2 ways to override properties:
+        > Liferay's control panel or creating a file called portal-ext.properties in LIFERAY_HOME 
+        also this file overrides properties from portal.properties
+    - Liferay reads: portal.properties #### portal-ext.properties #### portal-setup-wizard.properties
 
 ## UI Techs
