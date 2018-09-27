@@ -4,6 +4,7 @@ Personal notes for the Liferay Front-end Certification
 ## Table of contents
 * [Liferay introduction and first steps](#liferay-introduction-and-first-steps)
 * [UI Techs](#ui-techs)
+* [Theme development](#theme-development)
 
 <br/>
 
@@ -19,8 +20,6 @@ Personal notes for the Liferay Front-end Certification
 
 #### Developing with style
 - You can work with a lot of tools to help the development and beautify your application
-
-
 
 ### Front end Development tools
 #### Developing in liferay
@@ -44,8 +43,6 @@ Personal notes for the Liferay Front-end Certification
 
 #### Theme builder gradle plugin
 - As an alternative for liferay theme generate it offers gradle plugin for theme development
-
-<br/>
 
 ### Setting up development env
 - Install JDK8 (necessary to run and develop liferay)
@@ -81,3 +78,41 @@ Personal notes for the Liferay Front-end Certification
 <br/>
 
 ## UI Techs
+### Introduction
+- Liferay is based on an experience language called lexicon
+- Lexicon describes how a user interacts with liferay (define liferay's look and feel)
+- The goal of this experience language is to provide a unified experience through all aspects of a 
+site or a application, this means offers a visual design where everything flows and fits together
+
+### Lexicon CSS
+#### What is it ?
+- Is a web implementation of liferay's lexicon design language
+- Provides style guidelines and best practices for designing web apps
+- Have components and features to cover most use cases, also use reusable patterns
+
+#### Building a theme
+- Look and feel come from a theme
+- Lexicon base theme is used as default (contains bootstrap API extension and includes all of the default Lexicon CSS styles)
+- Atlas is liferay's custom bootstrap theme
+
+### Javascript in DXP
+- Uses metal.js and jquery as default frameworks
+
+### Alloy UI
+- Is a front end library
+- Is deprecated in current dxp version but can be maintaned and customized for legacy purposes
+
+### Metal.js
+- Js library to build UI components
+- Uses ES2015 specification
+
+### Custom displays with templates
+- Using liferay to build UX means:
+    - Lexicon CSS: provides Html, css and js for consistent design
+    - Metal.js and Alloy UI: provides js components
+    - Themes: using tehcs like lexicon css to provide a base look and feel across liferay
+- Web content templates provides a direct way to define the UX
+- Application display templates allow the freedom to control app UX
+
+## Theme development
+
