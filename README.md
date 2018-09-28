@@ -89,6 +89,7 @@ site or a application, this means offers a visual design where everything flows 
 - Is a web implementation of liferay's lexicon design language
 - Provides style guidelines and best practices for designing web apps
 - Have components and features to cover most use cases, also use reusable patterns
+- Uses bourbon to handle with cross browser compatibility
 
 #### Building a theme
 - Look and feel come from a theme
@@ -115,4 +116,57 @@ site or a application, this means offers a visual design where everything flows 
 - Application display templates allow the freedom to control app UX
 
 ## Theme development
+- Liferay uses themes to control UX
+- A theme is a collection of CSS, JS, Images and templates
+- This files are packaged up in a module that gets deployed on your liferay's instance
+- Themes can be built using liferay Theme Generator in Yeoman
+- You can export and import resources (To import: ` yo liferay-theme:import `)
+- This import command do almost `liferay-theme`, except it pull in source files from an existing theme created using plugins sdk
+- 
+
+### What is NOT in a theme
+- Themes just cant layout of applicatios on the page
+- Menus and panels, styling for web content, customizing application displays
+- This items above can be customized through templates or custom modules
+- You can create modules to override:
+    - The Product Menu
+    - The Control Menu
+    - Control Panel
+    - Site Administration Panel
+    - Simulation Menu
+    - Some application displays
+
+### Themelets
+- Used to modify fwe areas of the theme like colors or fonts for example
+- Have the same structure as a theme
+- Can be created as npm packages and can be published to npm registry for easy sharing and reuse
+
+### Theme contributors
+- Provides a ay to package UI resources independent of a theme and include it on the page
+- These have Ui resources to style Product Menu, control menu and simulation menu
+
+### Tools to generathe themes
+- Liferay theme generator is a yeoman generator that is used to create a theme boilerplate
+    - There are four generators in generator-liferay-theme package
+        - liferay-theme
+        - liferay-theme:import
+        - liferay-theme:layout
+        - liferay-theme:themelet
+
+- Liferay theme tasks is a set of gulp tasks for building and deploy your theme
+    - This tasks are automatically installed when create a theme with the generator
+
+- After the generation you will see this files and folders:
+    - gulpfile.js, liferay-theme.json, node_modules, package.json, src, src/WEB-INF
+
+### Build and deploy
+- `gulp build`: compiles all source files into build directory and creates WAR file in the dist dir of your theme
+- `gulp deploy`: runs all build tasks then deploys the generated war file to specified appserver
+- `gulp watch`: watch for changes to theme source files
+- `gulp init`: allows to specify your appserver path for use with the deploy task
+- `gulp extend`: allows to set what base theme you like to extend your theme from, also let you add themelets to your theme
+- `gulp status`: reports what base theme and themelets are implemented
+
+### Key files for theme customization
+- portal_normal.ftl: 
 
