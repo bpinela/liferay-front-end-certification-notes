@@ -168,5 +168,18 @@ site or a application, this means offers a visual design where everything flows 
 - `gulp status`: reports what base theme and themelets are implemented
 
 ### Key files for theme customization
-- portal_normal.ftl: 
+- portal_normal.ftl: The main HTML source file There are a number of HTML files we can modify, but the portal_normal 
+file contains the main structure of the page.
+- _custom.scss: The file used for custom, global styling Developers can style a number of elements in different files 
+as seen in the build folder. These files are combined into one file called main.css, which is then linked
+into the theme’s <head>, on every page.
+- main.js: Developers should place their custom JavaScript in this file, which is loaded on every page.
+- liferay-look-and-feel.xml: Developers can add different settings, such as Theme Settings, Color Schemes,
+and packaged Layout Templates in this file
 
+### Controlling page structure
+- Themes have control over every aspect of the page.
+- Every site page in Liferay breaks down to three major customizable sections as we see in the portal_normal.ftl:
+    - The Banner Section: Includes the top part of a page with its sections
+    - The Content Section: Includes breadcrumbs and code to render layouts and applications
+    - The Footer Section: Includes the bottom of the page that can be customized
