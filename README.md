@@ -1,6 +1,7 @@
 #Liferay front-end certification notes
 Personal notes for the Liferay Front-end Certification
 
+
 ##About the exam
 Exam Blueprint
 Duration: 90 minutes
