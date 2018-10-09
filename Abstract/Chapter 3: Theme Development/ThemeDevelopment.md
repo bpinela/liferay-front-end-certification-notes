@@ -1,6 +1,6 @@
-#Theme development
+# Theme development
 
-##Themes definition and use
+## Themes definition and use
 - Controls every part of UI and UX (Html, css, images)
 - Is a collection of: Css, Js, images and templates. These files are packaged 
 in a module that gets deployed in your instance
@@ -18,12 +18,12 @@ them on a page
 - Resource importer allow to deploy a theme with predfined content helping out
 to provides a reusable site template
 
-##Liferay theme generator
+## Liferay theme generator
 - Create a theme with theme generator and theme tasks
 - Generator is used to create a theme boilerplate
 - Tasks is a set of gulp tasks used for building and deploying a theme
 
-##Yeoman generator
+## Yeoman generator
 - There are four generators in generator-liferay-theme package
     - `liferay-theme` --> Create the base theme files and install the 
     dependencies for deployment
@@ -38,7 +38,7 @@ to provides a reusable site template
     - src: contais source files of theme
         - /WEB-INF: metada files such as plugin-package.properties and 
         liferay-look-and-feel.xml
-##Gulp tasks
+## Gulp tasks
 - All these tasks are executed from root's theme directory
 - `gulp build`: compiles all source files into the build directory and creates
 a war file in dist directory of your theme
@@ -50,13 +50,13 @@ and on refresh the page take the effect
 - `gulp extend`: Set what base theme you will extend your theme from, also
 add themelets to your themes
 - `gulp status`: Reports what base theme and themelets are implemented
-##Key files for theme customization
+## Key files for theme customization
 - portal_normal.ftl: the main HTML source file
 - _custom.scss: global styling
 - main.js: global scripts
 - liferay-look-and-feel.xml: theme settings, color schemes and packaged layout
 templates
-##Page structure
+## Page structure
 - 3 major customizable sections in portal_normal.ftl
     - Banner: top page
     - Content: breadcrumbs, layouts and applications
@@ -82,18 +82,18 @@ templates
 - Assign a value to a variable `<#assign />`
 - For instance, including a new font can be this easy: `@include font-face(` +
     `"open_sansregular", "../fonts/opensans-bolditalic-webfont", bold, italic);`
-##Custom JS
+## Custom JS
 - liferay-theme-es2015-hook allows es2015 transpilation
 - after build with transpiled files they will be packaged as amd modules
 - it needed to be add on package.json 
 `hookModules: ["liferay-theme-es2015-hook"]`
 - import dependencies like `import State from 'metal-state/src/State'`
 - With ES2015 you can also uses class, constructors and inheritance
-##Theme configuration
+## Theme configuration
 - liferay-look-and-feel.xml configs for custom layout templates, theme settings,
 and application decorators
 - liferay-plugin-package.properties contains info and properties for our theme
-##Application decorators
+## Application decorators
 - In liferay-look-and-feel when this decorators is applied --> happens:
     - Barebone: Neither the wrapping box nor custom application title is shown
     - Borderless: The application is no longer wrapped by a white box, but the
@@ -106,7 +106,7 @@ and application decorators
 - A default decorator need to be set, so just add on liferay-loon-and-feel.xml: 
 `<default-portlet-decorator>true</default-portlet-decorator>`
 - Import it on _custom.scss `@import "portlet_decorator";`
-##Theme Settings
+## Theme Settings
 - Set configurable values into a theme that can be accessed into ftl 
 (like this: `<#assign new_variable = getterUtil.getBoolean(`
 `themeDisplay.getThemeSetting("new-theme-setting")) />`) and once deployed 
@@ -119,7 +119,7 @@ is editable on control panel
     - value: default setting value
 - liferay-plugin-package.properties contains default information of our theme
 - A color scheme can be personalized on liferay-look-and-feel.xml
-##Themelets
+## Themelets
 - Reusable pieces of code that are implemented by a theme (like a component)
 - Consists of css, templates, images and js like a theme
 - Can be saved like a npm package and published
@@ -130,7 +130,7 @@ and a custom scss file
 its respectives comment tags:
     - Css: `/* inject:imports */ /* endinject */`
     - JS: `<!-- inject:js --> <!-- endinject -->`
-##Theme contributors
+## Theme contributors
 - Is a module that contains UI resource independent of theme (global content)
 - Control menu, Product menu and simulation panel are packaged in theme 
 contributors
@@ -143,17 +143,17 @@ and `Web-ContextPath` properties on bnd.bnd file
     are hosted
 - Set Priority to your bnd file setting `Liferay-Theme-Contributor-Weight: 100`
 - All SCSS resources are imported in blade.theme.contributor.scss file
-##Resources importer
+## Resources importer
 - Defined in sitemap.json, describing the contents and hierarchy of a site that
 liferay can import as a site template
 - Sitemap.json defines: Pages, layout templates, applications, preferences and
 content
 - Assets can be also imported with or without metadata
 - Documents and media, web content can be imported as well
-##Portlet Preferences
+## Portlet Preferences
 - Are properties that stores basic application configuration data
 - groupId -> selects a site
-## Embedding applications
+##  Embedding applications
 - embed your application into portal_normal.ftl that will render them on each
 page
 - There are 3 taglibs to use: 

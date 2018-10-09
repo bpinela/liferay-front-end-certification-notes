@@ -1,6 +1,6 @@
-#Development Environment
+# Development Environment
 
-##Introduction to front end development
+## Introduction to front end development
 - 2 general options for stylistc changes
     - Modules: Themes and laoyut templates for global look'n feel changes
     - Templates: specific customizations for content, applications and 
@@ -19,7 +19,7 @@
     - Liferay theme generator: generate themes and themelets
     - Brackets: Text editor
     - Liferay tomcat bundle: view dev changes locally
-##Setting up the dev env
+## Setting up the dev env
 - Install Java (Jdk8), also set JAVA_HOME env variable
 - Install node.js
 - Install gulp and yeoman globally `npm install -g yo gulp`
