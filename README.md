@@ -1,6 +1,20 @@
 # Liferay front-end certification notes
 Personal notes for the Liferay Front-end Certification
 
+## Table of contents
+#### Test Details
+* [About the exam](#about-the-exam)
+* [Topics](#topics)
+* [Exam Source Material](#exam-source-material)
+#### Liferay frontend material abstract
+* [Liferay introduction and first steps](Abstract/Chapter%201:%20Development%20Environment/DevelopmentEnvironment.md)
+* [Liferay Portal UI and UX](/Abstract/Chapter%202:%20UI/UI.md)
+* [Theme development](/Abstract/Chapter%203:%20Theme%20Development/ThemeDevelopment.md)
+* [Layout Templates]()
+* [Customizing the front-end]()
+* [Delivering Consistent Content Experiences]()
+* [Customizing workflow email notifications]()
+* [Creating differet front ends for applications]()
 
 ## About the exam
 - Exam Blueprint
@@ -67,8 +81,3 @@ platform, for example: aui and liferay-ui
 The exam is based off of the Liferay Training course Front-End Developer and
 the Liferay DXP Developer Guide, containing official documentation and
 best practices.
-
-## Table of contents
-* [Liferay introduction and first steps](Abstract/Chapter%201:%20Development%20Environment/DevelopmentEnvironment.md)
-* [Liferay Portal UI and UX](/Abstract/Chapter 1: Development Environment/DevelopmentEnvironment.md)
-* [Theme development](#theme-development)
