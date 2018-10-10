@@ -14,7 +14,7 @@ Personal notes for the Liferay Front-end Certification
 * [Customizing the front-end]()
 * [Delivering Consistent Content Experiences]()
 * [Customizing workflow email notifications]()
-* [Creating differet front ends for applications]()
+* [Creating different front ends for applications]()
 
 ## About the exam
 - Exam Blueprint
